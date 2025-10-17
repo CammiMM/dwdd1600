@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cammi Mitchell">
+    <meta name="description" content="Learn about rock climbing">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>Intro To Rock Climbing:with an emphasis on bouldering</title>
+    <link rel="icon" type="images1/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--start the head page-->
+    <header>
+         <img src="images1/logo.png" alt="Logo for website" width="50" height="50">
+        <span>Intro To Rock Climbing</span>
+    </header>
+
+    <!--start page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Different Kinds of Rock Climbing</a></li>
+            <li><a href="gear.html">Gear</a></li>
+            <li><a href="terminology.html">Terminology</a></li>
+            <li><a href="holds.html">Hold Types</a></li>
+            <li class="active"><a href="beta.html">Ask For Beta</a></li>
+        </ul>
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Ask For Beta</h1>
+
+        <form method="get" class="form" action="thanks.html">
+            <fieldset>
+                <legend>Climber Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Enter Email*<input type="email" name="email" required placeholder="Climbing@gmail.com"></label>
+                <label>Enter Phone Number*<input type="tel" name="phone" required placeholder="123-456-7890"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Grade of Boulder</legend>
+                <label><input type="radio" name="grade" value="V0"> V0</label>
+                <label><input type="radio" name="grade" value="V1"> V1</label>
+                <label><input type="radio" name="grade" value="V2"> V2</label>
+                <label><input type="radio" name="grade" value="V3"> V3</label>
+                <label><input type="radio" name="grade" value="V4"> V4</label>
+                <label><input type="radio" name="grade" value="V5"> V5</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Wall Angle</legend>
+                <label><input type="checkbox" name="slab" value="clicked">Slab</label>
+                    <label><input type="checkbox" name="vertical" value="clicked">Vertical</label>
+                        <label><input type="checkbox" name="40 degrees" value="clicked">40 Degrees</label>
+                            <label><input type="checkbox" name="45 degrees" value="clicked">45 Degrees</label>
+                                <label><input type="checkbox" name="cave" value="clicked">Cave</label>
+
+            </fieldset>
+
+            <fieldset>
+                <label>Hold Types of Boulder
+                    <select name="hold types">
+                        <option value="none">Please Select</option>
+                        <option value="crimpy">Crimpy</option>
+                        <option value="slopy">Slopy</option>
+                        <option value="juggy">Juggy</option>
+                        <option value="pinchy">Pinchy</option>
+                        <option value="multiple">Multiple Hold Types</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label> Photo
+                <textarea name="comments">Please upload a photo of your project here</textarea>
+            </label>
+
+            <input type="submit" value="Send Beta Request">
+        </form>
+
+
+
+    </main>
+    <!--start footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Cammi Mitchell &bull; Web Essentials</p>
+
+    </footer>
+</body>
+
+</html>
